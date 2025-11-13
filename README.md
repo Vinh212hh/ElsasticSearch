@@ -83,54 +83,12 @@ right → matching lines
 This allows the user to navigate huge log sets easily.
 
 ✅ 3. Use Case Diagram
-          +-----------------+
-          |     User        |
-          +--------+--------+
-                   |
-                   |
-            +------+------+
-            |  Log System |
-            +------+------+
-                   |
-     +-------------+--------------------+
-     |             |                    |
-     v             v                    v
-+---------+  +-------------+   +------------------+
-|Generate |  |Search Logs  |   | View Search GUI  |
-| Log     |  | in Parallel |   | + Open Files      |
-| Files   |  | by Keyword  |   | + Highlight Text  |
-+---------+  +-------------+   +------------------+
+
+<img width="539" height="560" alt="image" src="https://github.com/user-attachments/assets/48e3d8b7-d387-438d-9bf7-0b5fc1feba12" />
 
 ✅ 4. Activity Diagram (Overall System)
- ┌───────────────────────────┐
- │       Start System        │
- └───────────────┬───────────┘
-                 v
-      ┌───────────────────┐
-      │ User selects mode │
-      └───────┬───────────┘
-              │
-      ┌───────┼──────────┬────────────────────┐
-      v       v            v                    v
-┌────────┐ ┌──────────────┐ ┌────────────────────┐
-│Generate│ │Parallel Search│ │GUI Search Interface│
-│ Logs   │ │   in Logs     │ │ (user enters input)│
-└──┬─────┘ └──────┬───────┘ └──────────┬─────────┘
-    │             │                     │
-    v             v                     v
-Write logs   Scan files           Display matching files
-                │                     │
-                v                     v
-        Collect matched lines    Open selected file
-                │                     │
-                v                     v
-      Write results / summary     Highlight matches
-                │                     │
-                └───────────────┬────┘
-                                v
-                         ┌────────────┐
-                         │   Finish    │
-                         └────────────┘
+
+<img width="489" height="599" alt="image" src="https://github.com/user-attachments/assets/f1349409-a262-49d5-b519-7bf9978c11a0" />
 
 ✅ 5. System Explanation (English)
 
@@ -255,3 +213,6 @@ SinhLog.java generates massive datasets for performance testing.
 5. GUI improves usability
 
 Provides a human-friendly interface to browse and filter results quickly.
+
+
+
